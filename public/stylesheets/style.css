@@ -1,0 +1,40 @@
+.container-fluid {
+  display: grid;
+  grid-template-columns: auto 1fr minmax(600px,3fr) 1fr;
+
+}
+.nav {
+  width: 150px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background: #39bae6;
+}
+.nav:hover {
+  border: 2px solid #a7aaaf;
+}
+
+.nav:active {
+  background: #3c88fd;
+}
+.nav-main {
+  grid-column: 1 / 2;
+}
+.nav-item {
+  grid-column: 3 / 4;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: end;
+  grid-gap: 2rem;
+}
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
